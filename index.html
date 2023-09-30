@@ -1,68 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up form</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <div class="wrapper">
-    <div class="sidebar">
+        <div class="sidebar">
 
-        <div class="sidebar_top">
-            <div class="logo_container">
-                <div class="logo_image"></div>
-                <div class="logo_text"> SIGN UP</div>
-            </div>
-        </div>
-
-        <div class="sidebar_bottom">
-            <div class="credit">
-            <p>Photo by <a href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Halie West</a> on <a href="https://unsplash.com/photos/25xggax4bSA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
-            </div>
-
-        </div>
-
-    </div>
-    
-    <div class="main">
-
-        <div class="header">
-            <div>
-              <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
-              <p>You <em>know</em> you want to.</p>
-            </div>
-        </div>
-
-        <form id="myform" >
-            <div class="form_box">
-
-                <div class="form_left">
-                    <div class="form_field"><label for="f_name">First name: </label><input type="text" id="f_name" class="form_input"><label id="f_name_comment" class="comment">fff</label></div>
-                    <div class="form_field"><label for="l_name">Last name: </label><input type="text" id="l_name" class="form_input"><label id="l_name_comment" class="comment">fff</label></div>
-                    <div class="form_field"><label for="email">Email: </label><input type="email" id="email" class="form_input" placeholder="name@example.com"><label id="email_comment" class="comment"></label></div>
-                </div>
-
-                <div class="form_right">
-                    <div class="form_field"><label for="phone_no">Phone no</label><input type="tel" id="phone_no" class="form_input" placeholder="123-121-2321"><label id="phone_no_comment" class="comment"></label></div>
-                    <div class="form_field"><label for="pass1">Password</label><input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" id="pass1" class="form_input" minlength="8" required ><label id="pass1_comment" class="comment"></label></div>
-                    <div class="form_field"><label for="pass2">Confirm Password</label><input type="password" id="pass2" class="form_input" minlength="8" required ><label id="pass2_comment" class="comment">fff</label></div>
+            <div class="sidebar_top">
+                <div class="logo_container">
+                    <div class="logo_image"></div>
+                    <div class="logo_text"> SIGN UP</div>
                 </div>
             </div>
-        </form>
 
-        <div class="signup">
-            <button type="submit" form="myform">Submit</button>
-            <h3>Already have an account? <a href="">Log in</a></h3>
+            <div class="sidebar_bottom">
+                <div class="credit">
+                    <p>Photo by <a
+                            href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Halie
+                            West</a> on <a
+                            href="https://unsplash.com/photos/25xggax4bSA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </p>
+                </div>
+
+            </div>
+
         </div>
-        
-    
+
+        <div class="main">
+
+            <div class="header">
+                <div>
+                    <p>This is not a real online service! You know you need something like this in your life to help you
+                        realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+                    <p>You <em>know</em> you want to.</p>
+                </div>
+            </div>
+
+            <form id="myform">
+                <div class="form_box">
+
+                    <div class="form_left">
+                        <div class="form_field"><label for="f_name">First name: </label><input type="text" id="f_name" name="f_name"
+                                class="form_input"><label id="f_name_comment" class="comment"></label></div>
+                        <div class="form_field"><label for="l_name">Last name: </label><input type="text" id="l_name" name="l_name"
+                                class="form_input"><label id="l_name_comment" class="comment"></label></div>
+                        <div class="form_field"><label for="email">*Email: </label><input type="email" id="email" name="email"
+                                class="form_input" placeholder="name@example.com" required><label id="email_comment"
+                                class="comment"></label></div>
+                    </div>
+
+                    <div class="form_right">
+                        <div class="form_field"><label for="phone_no">Phone no</label><input type="tel" id="phone_no" name ="phone_no"
+                                class="form_input" placeholder="123-121-2321"><label id="phone_no_comment"
+                                class="comment"></label></div>
+                        <div class="form_field"><label for="pass1">*Password</label><input type="password"
+                                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                                id="pass1" name="pass1" class="form_input" minlength="8" required><label id="pass1_comment"
+                                class="comment"></label></div>
+                        <div class="form_field"><label for="pass2">*Confirm Password</label><input type="password"
+                                id="pass2" name="pass2" class="form_input" minlength="8" required><label id="pass2_comment"
+                                class="comment"></label></div>
+                        
+                        <div class="comment" id="required_note">*Required field</div>
+                    </div>
+                </div>
+            </form>
+
+            <div class="signup">
+                <button type="submit" form="myform">Submit</button>
+                <h3>Already have an account? <a href="">Log in</a></h3>
+            </div>
 
 
 
-    </div>
+
+
+        </div>
     </div>
 
 
@@ -74,34 +95,31 @@
         let phone_no_comment = document.querySelector("#phone_no_comment");
         let pass1_comment = document.querySelector("#pass1_comment");
         let pass2_comment = document.querySelector("#pass2_comment");
-        
-        first_name_comment.textContent = "test";
-        last_name_comment.textContent = "test";
-        email_comment.textContent = "test";
-        phone_no_comment.textContent = "test";
-        pass1_comment.textContent = "test";
-        pass2_comment.textContent = "test";
+
+        first_name_comment.textContent = "";
+        last_name_comment.textContent = "";
+        email_comment.textContent = "";
+        phone_no_comment.textContent = "";
+        pass1_comment.textContent = "";
+        pass2_comment.textContent = "";
 
         let pass1_input = document.querySelector('#pass1');
         let pass2_input = document.querySelector('#pass2');
         // pass1_input.value = 'test';
         // alert(pass1_input.value);
-        pass2_input.addEventListener('input', ()=>{
+        pass2_input.addEventListener('input', () => {
 
             pass1_input.value == pass2_input.value
-                ? pass2_comment.textContent = "matching passwords": pass2_comment.textContent = ("not matching passwords");
-            });
-        
+                ? pass2_comment.textContent = "matching passwords" : pass2_comment.textContent = ("not matching passwords");
+        });
 
-        
+
+
 
 
 
     </script>
-    
+
 </body>
+
 </html>
-
-
-
-  
