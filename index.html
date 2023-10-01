@@ -58,7 +58,7 @@
 
                     <div class="form_right">
                         <div class="form_field"><label for="phone_no">Phone no</label><input type="tel" id="phone_no" name ="phone_no"
-                                class="form_input" placeholder="123-121-2321"><label id="phone_no_comment"
+                                class="form_input" pattern="(\d{10})" placeholder="123-121-2321" title="Please enter a valid phone no (10 digits with no dashes), example: 123-123-1122"><label id="phone_no_comment"
                                 class="comment"></label></div>
                         <div class="form_field"><label for="pass1">*Password</label><input type="password"
                                 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
